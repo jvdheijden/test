@@ -2,17 +2,31 @@
 <html>
     <head>
         <title>My app</title>
-        <link rel="stylesheet" href="assets/js/jquery.mobile-1.1.1.min.css"/>
-        <script src="phonegap.js"></script>
+       <!-- <link rel="stylesheet" href="assets/js/jquery.mobile-1.1.1.min.css"/>
+        <script src="phonegap.js"></script> -->
         <script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.mobile-1.1.1.min.js"></script>
+	<!--<script src="assets/js/jquery.mobile-1.1.1.min.js"></script> -->
+        <link href='css/smokePuff.css' rel='stylesheet' type='text/css' />
+        <script src="assets/js/smoke/smokeEffect.js" type="text/javascript"></script>
     </head>
     <body>
-        <h1>Hooooi</h1>
-        <ul data-role="listview" data-theme="g">
-            <li>Acura</li>
-            <li>Audi</li>
-            <li>BMW</li>
-        </ul>
+        <script type='text/javascript'>
+            SmokeEffect.imgLocation = "assets/js/smoke/smoke.png";
+            SmokeEffect.smokeWidth = 100;
+            SmokeEffect.smokeHeight = 100;
+            SmokeEffect.makeEffect("smokeSpawnPoint", 100, 100);
+            SmokeEffect.makeEffect("smokeSpawnPoint2", 200, 200);
+            SmokeEffect.makeEffect("smokeSpawnPoint3", 300, 300);
+        </script>
+        
+        <div id="smokeSpawnPoint">
+            
+        </div>
+        <div id="smokeSpawnPoint2">
+            
+        </div>
+        <div id="smokeSpawnPoint3">
+            
+        </div>
     </body>
 </html>
